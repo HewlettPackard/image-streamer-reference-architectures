@@ -1,4 +1,4 @@
-# Artifact bundle contents
+# ImageStreamer artifacts for Docker EE personalization
 
 --------------------------------------------------------------------------------
                  File name: HPE-RHEL-7.3-Docker-2017-04-18.zip
