@@ -3,3 +3,6 @@ HPE Image Streamer based HPE Reference Architectures and HPE Reference Configura
 
 RC-RHEL-Docker - Artifacts to deploy Docker Datacenter using ImageStreamer
 
+RC-RHEL-Oracle-Database - Artifacts to deploy Oracle database using ImageStreamer
+
+
