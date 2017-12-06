@@ -1,87 +1,99 @@
 # ImageStreamer artifacts for Docker EE personalization
 
 --------------------------------------------------------------------------------
-                 File name: HPE-RHEL-7.3-Docker-2017-04-18.zip
-        Name (in manifest): HPE-RHEL-7.3-Docker-2017-04-18
-               Description: ImageStreamer artifacts for Docker EE personalization. (c) Copyright 2017 Hewlett Packard Enterprise Development. Licensed under the Apache License, Version 2.0 (the "License")...
-                     Dated: 2017-04-18 (11:14:51)
+
+	            File name: HPE-RHEL-7.3-Docker-Worker-2017-11-28-v3.1.zip
+		Name (in manifest): HPE-RHEL-7.3-Docker-Worker-2017-11-28-v3.1
+		       Description: Artifacts to deploy a Docker EE Worker node and add it to an existing UCP swarm 
+		             Dated: 2017-11-28 (21:40:05)
+
 --------------------------------------------------------------------------------
 
 Deployment Plans:
 
-        Name: RHEL-7.3-Docker-Worker-2017-04-18 (Type:OEDeploymentPlan)
+	        Name: HPE-RHEL-7.3-Docker-Worker-2017-11-28 (Type:OEDeploymentPlan)
+	 Description: Deploys a Docker worker node in an existing UCP swarm
 
 Build Plans:
 
-	       Name: RHEL-7.3-Docker-Worker-2017-04-18 (Type:deploy)
+	       Name: RHEL-7.3-Docker-Worker-2017-11-28 (Type:deploy)
+	Description: Deploys a Docker worker node in an existing UCP swam
+
 
 Plan Scripts:
 
-	       Name: 030-RHEL-7.3-configure-multiple-NIC-teaming (deploy)
-	   FullName: 10576df5-ba5b-4df0-9a44-7fd8d858c8af_planscript.json
-
-
-	       Name: 070-Docker-configure-proxy (deploy)
-	   FullName: 18f1e1cc-c20a-4f22-aa31-f822d07860d0_planscript.json
-
-
-	       Name: 150-RHEL-7.3-config-firewalld-for-Docker (deploy)
-	   FullName: 2ca5f380-8edc-4335-b613-b889455f6bec_planscript.json
-
-
-	       Name: 090-RHEL-7.3-Docker-configure-devicemapper (deploy)
-	   FullName: 3b640bba-9c81-4eb6-97f7-34ac6f15b296_planscript.json
-
-
-	       Name: 100-RHEL-7.3-Docker-Bootstrap (deploy)
-	   FullName: 3cbb3086-01d2-410e-a6b7-c476aa1e5c9d_planscript.json
-
-
-	       Name: 050-RHEL-7.3-configure-hostname (deploy)
-	   FullName: 4930dd75-5995-407f-8cdb-c24ab5b7eee4_planscript.json
-
-
-	       Name: 000-RHEL-7.3-mount-and-validate (general)
-	   FullName: 4b369fb2-4f14-47fe-8a95-572883f18f0d_planscript.json
-
-
-	       Name: 040-RHEL-7.3-Docker-configure-ntp (deploy)
-	   FullName: 4b446936-11db-45d7-8929-1f137e2ca0a5_planscript.json
-
-
-	       Name: 010-RHEL-7.3-set-iscsi-initiator-name (deploy)
-	   FullName: 62a480b4-1fe1-434e-955a-55a01e15cd01_planscript.json
+	       Name: 120-upload-bash-helpers (deploy)
+	   FullName: 0f927c18-3280-494a-a406-5cbf42851856_planscript.json
+	Description: 120-upload-bash-helpers
 
 
 	       Name: 080-RHEL-7.3-erase-drive (deploy)
-	   FullName: 81828cb9-f751-477a-9e77-62a7365dac7c_planscript.json
-
-
-	       Name: 130-RHEL-7.3-Docker-preconfig (deploy)
-	   FullName: 985d3ede-5bb7-4c7b-adab-c38ecb0f82dd_planscript.json
-
-
-	       Name: 120-upload-bash-helpers (deploy)
-	   FullName: a6a8a4d7-43c1-4ab9-a003-2297f1792fca_planscript.json
-
-
-	       Name: 140-Docker-UCP-worker-configure (deploy)
-	   FullName: b9abb154-3837-4ee3-a82e-58f62c5c08bd_planscript.json
-
-
-	       Name: 999-RHEL-7.3-unmount (general)
-	   FullName: bb426aab-3142-402e-a74e-9e3a23415600_planscript.json
-
-
-	       Name: 060-RHEL-7.3-manage-security-services (deploy)
-	   FullName: bc16aa78-f105-40cc-8d8c-5c05bfb7f96e_planscript.json
+	   FullName: 22f9fa37-54f8-42e5-8554-995d7bad8ae3_planscript.json
+	Description: 080-RHEL-7.3-erase-drive
 
 
 	       Name: 110-Docker-remove-key.json (deploy)
-	   FullName: c72d11b8-6e2f-4c72-82c4-64af75c89d84_planscript.json
+	   FullName: 48365022-a0c4-4dd6-b1c4-d2a371ebdfc5_planscript.json
+	Description: 110-Docker-remove-key.json
 
 
 	       Name: 020-RHEL-7.3-change-root-password (deploy)
-	   FullName: d5f0c3be-0991-48ba-96c3-c6efcd2edf79_planscript.json
+	   FullName: 51b0b6c4-3d7b-4b36-b74d-7aa3fe4125c4_planscript.json
+	Description: 020-RHEL-7.3-change-root-password
+
+
+	       Name: 100-RHEL-7.3-Docker-Bootstrap (deploy)
+	   FullName: 52c03f5a-234b-4e93-8b42-a9234a72ee5e_planscript.json
+	Description: 100-RHEL-7.3-Docker-Bootstrap
+
+
+	       Name: 050-RHEL-7.3-configure-hostname-2017-08-21 (deploy)
+	   FullName: 609f07cb-f929-4488-978b-2b959a9ed75a_planscript.json
+	Description: configure hostname
+
+
+	       Name: 040-RHEL-7.3-Docker-configure-ntp (deploy)
+	   FullName: 6aeac463-3d2c-45ec-a2e3-b387fa5eaa0d_planscript.json
+	Description: 040-RHEL-7.3-Docker-configure-ntp
+
+
+	       Name: 999-RHEL-7.3-unmount (general)
+	   FullName: 78b71af8-71ea-4582-aa0f-872777baeaf2_planscript.json
+	Description: 999-RHEL-7.3-unmount
+
+
+	       Name: 060-RHEL-7.3-manage-security-services (deploy)
+	   FullName: 97d86283-f330-4f18-88ee-a6f0d9759221_planscript.json
+	Description: 060-RHEL-7.3-manage-security-services
+
+
+	       Name: 130-RHEL-7.3-Docker-preconfig (deploy)
+	   FullName: bdb6ca0e-e38e-4904-8f6e-4c2bc6fd074a_planscript.json
+	Description: 130-RHEL-7.3-Docker-preconfig
+
+
+	       Name: 090-RHEL-7.3-Docker-configure-devicemapper (deploy)
+	   FullName: c2b79396-324b-4830-b2fa-94aa374338ba_planscript.json
+	Description: 090-RHEL-7.3-Docker-configure-devicemapper
+
+
+	       Name: 140-Docker-UCP-worker-configure (deploy)
+	   FullName: cc31835c-169b-4f87-8eec-1d595c1407d9_planscript.json
+	Description: 140-Docker-UCP-worker-configure
+
+
+	       Name: 000-RHEL-7.3-mount-and-validate (general)
+	   FullName: d7a4a7a9-18de-40d9-ab80-d8d4aeab3e11_planscript.json
+	Description: 000-RHEL-7.3-mount-and-validate
+
+
+	       Name: 030-RHEL-7.3-configure-multiple-NIC-teaming-2017-06-02 (deploy)
+	   FullName: dc363596-a045-49ea-8174-73fb007ae210_planscript.json
+	Description: configure NIC teaming
+
+
+	       Name: 010-RHEL-7.3-set-iscsi-initiator-name (deploy)
+	   FullName: f22bd893-b1f8-4f9a-afff-fd39422f014f_planscript.json
+	Description: 010-RHEL-7.3-set-iscsi-initiator-name
 
 
