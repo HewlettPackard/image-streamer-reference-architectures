@@ -7,8 +7,8 @@
 
 --------------------------------------------------------------------------------
          
-         File name: HPE - ESXi - additional configurations - 2018-08-02.zip
-         Name (in manifest): HPE - ESXi - additional configurations - 2018-08-02
+         File name: HPE - ESXi - additional configurations - 2018-08-20.zip
+         Name (in manifest): HPE - ESXi - additional configurations - 2018-08-20
          Description: This bundle contains HPE Image Streamer plan scripts to personalize and deploy the ESXi  on HPE Synergy compute modules, with additional configurations as per requirement.
          Dated: 2018-08-12 (14:54:27)
 --------------------------------------------------------------------------------
