@@ -1,7 +1,6 @@
 ## About ##
 ________________________________________
-This repo contains the HPE Image Streamer plan scripts and artifact bundle to personalize and deploy Red Hat Enterprise Linux 7.5 and prepare the OS volume for Red Hat OpenShift worker node deployment. The actual deployment of Red Hat OpenShift is done by Ansible scripts found in the deployment guide at https://github.com/HewlettPackard/hpe-openshift-solutions/DeploymentGuides/HPE3PAR and at https://github.com/HewlettPackard/hpe-openshift-solutions/(NEED FINAL PATH HERE). 
-
+This repo contains the HPE Image Streamer plan scripts and artifact bundle to personalize and deploy Red Hat Enterprise Linux 7.5 and prepare the OS volume for Red Hat OpenShift worker node deployment. The actual deployment of Red Hat OpenShift is done by Ansible scripts found in the deployment guide at https://github.com/HewlettPackard/hpe-openshift-solutions/DeploymentGuides/HPE3PAR and at https://github.com/HewlettPackard/hpe-solutions-openshift/tree/master/synergy/scalable
 This document details the HPE Image Streamer artifacts used to create this solution. 
 
 The contents of this repo are:
