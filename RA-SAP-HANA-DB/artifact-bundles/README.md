@@ -1,31 +1,43 @@
-# Artifact Bundle Contents for ImageStreamer v4.0 release
+# Artifact Bundle Contents for ImageStreamer v4.1 release
 
 ## Note:
-- All artifact bundles in this repository are compatible with HPE Image Streamer v4.0 release
+- All artifact bundles in this repository are compatible with HPE Image Streamer v4.1 release
 - The documentation how to prepare the systems and use the artifact bundles is in the [docs](../docs/) folder.
 
 ## Version History:
+- **[HPE-RHEL7.x-SAP-HANA-DB-RA-2019-02-04-v4.1.zip](HPE-RHEL7.x-SAP-HANA-DB-RA-2019-02-04-v4.1.zip)**
+  - For usage on Red Hat Enterprise Linux for SAP Applications 7.x
+  - Lifecycle activities (Install SAP HANA, update Operating System & SAP HANA DB, switch workloads)
+  - Storage options: HPE 3PAR StoreServ or HPE Synergy D3940 Storage Module
+- **[HPE-SLES12-SAP-HANA-DB-RA-2019-02-04-v4.1.zip](HPE-SLES12-SAP-HANA-DB-RA-2019-02-04-v4.1.zip)**
+  - For usage on SUSE Linux Enterprise Server for SAP Applications 12
+  - Lifecycle activities (Install SAP HANA, update Operating System & SAP HANA DB, switch workloads)
+  - Storage options: HPE 3PAR StoreServ or HPE Synergy D3940 Storage Module
 - **[HPE-RHEL7.x-SAP-HANA-DB-RA-2018-06-01-v4.0.zip](HPE-RHEL7.x-SAP-HANA-DB-RA-2018-06-01-v4.0.zip)**
   - For usage on Red Hat Enterprise Linux for SAP Applications 7.x
   - Lifecycle activities (Install SAP HANA, update Operating System & SAP HANA DB, switch workloads)
+  - Storage option: HPE 3PAR StoreServ
 - **[HPE-SLES12-SAP-HANA-DB-RA-2018-06-01-v4.0.zip](HPE-SLES12-SAP-HANA-DB-RA-2018-06-01-v4.0.zip)**
   - For usage on SUSE Linux Enterprise Server for SAP Applications 12
   - Lifecycle activities (Install SAP HANA, update Operating System & SAP HANA DB, switch workloads)
+  - Storage option: HPE 3PAR StoreServ
 - **[HPE-SLES12-SAP-HANA-DB-RA-2018-03-06-v3.1.zip](HPE-SLES12-SAP-HANA-DB-RA-2018-03-06-v3.1.zip)**
   - Changed default value for attribute DepotHost in deployment plan to fulfill ImageStreamer 4.0 requirements
+  - Storage option: HPE 3PAR StoreServ
 - **[HPE-SLES12-SAP-HANA-DB-RA-2017-10-20-v3.1.zip](HPE-SLES12-SAP-HANA-DB-RA-2017-10-20-v3.1.zip)**
   - First version
+  - Storage option: HPE 3PAR StoreServ
 
 ## Latest Artifact Bundle Contents:
 
 **Artifact Bundles:**
 
-      File name: HPE-RHEL7.x-SAP-HANA-DB-RA-2018-06-01-v4.0.zip
-           Name: HPE-RHEL7.x-SAP-HANA-DB-RA-2018-06-01
+      File name: HPE-RHEL7.x-SAP-HANA-DB-RA-2019-02-04-v4.1.zip
+           Name: HPE-RHEL7.x-SAP-HANA-DB-RA-2019-02-04
     Description: Artifacts for image capturing and SAP HANA deployment on RHEL7.x.
 
-      File name: HPE-SLES12-SAP-HANA-DB-RA-2018-06-01-v4.0.zip
-           Name: HPE-SLES12-SAP-HANA-DB-RA-2018-06-01
+      File name: HPE-SLES12-SAP-HANA-DB-RA-2019-02-04-v4.1.zip
+           Name: HPE-SLES12-SAP-HANA-DB-RA-2019-02-04
     Description: Artifacts for image capturing and SAP HANA deployment on SLES12.
 
 
@@ -76,9 +88,9 @@
            Type: Deploy
     Description: Enables or disables security services.
 
-           Name: HPE - Linux - SAP HANA DB - partition SAN disk using LVM
+           Name: HPE - Linux - SAP HANA DB - partition disk using LVM
            Type: Deploy
-    Description: Partitions the attached SAN storage using LVM.
+    Description: Partitions the attached storage using LVM.
 
            Name: HPE - RHEL7.x - SAP HANA DB - update OS settings
                  HPE - SLES12 - SAP HANA DB - update OS settings
