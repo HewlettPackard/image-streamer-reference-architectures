@@ -18,7 +18,9 @@ and switching workload to another compute module can be executed in a standardiz
 
 - HPE Synergy platform
 - HPE Synergy Composer configured with OS deployment server 'HPE Synergy Image Streamer'
-- HPE 3PAR StoreServ as SAN storage
+- Storage 
+  - HPE 3PAR StoreServ or
+  - HPE Synergy D3940 Storage Module
 - Operating Systems
   - Red Hat Enterprise Linux for SAP Applications 7.x or
   - SUSE Linux Enterprise Server for SAP Applications 12
@@ -52,7 +54,7 @@ for a deployment, the better the user experience.
         The directory will be created during deployment.
 
     DepotMountType
-        Network protocol for the software share. Either CIFS or NFS is supported.
+        Network protocol for the software share. Either 'CIFS' or 'NFS' is supported.
 
     DepotSapDirectory
         Directory on the software share that contains the SAP HANA installation media.
@@ -73,10 +75,10 @@ for a deployment, the better the user experience.
         The SAP System Identification of the SAP HANA database host. Rules for SAP System ID definition apply.
 
     HanaStartAfterReboot
-        Sets the autostart option for HANA after a system reboot. Possible values are Yes and No.
+        Sets the autostart option for HANA after a system reboot. Possible values are 'Yes' and 'No'.
 
     HanaUpdate
-        Defines if the SAP HANA database shall be updated. Possible values are true and false.
+        Defines if the SAP HANA database shall be updated. Possible values are 'True' and 'False'.
 
     HostName
         The hostname of the system.
@@ -116,8 +118,10 @@ for a deployment, the better the user experience.
         New password for the root user.
 
     SSH
-        Defines if SSH will be enabled on the deployed OS. Possible values are Enabled or Disabled
+        Defines if SSH will be enabled on the deployed OS. Possible values are 'Enabled' or 'Disabled'.
 
+    Storage
+        Defines which storage to use. Possible values are 'HPE 3PAR StoreServ' or 'HPE Synergy D3940'.
 
 ## How to use
 
@@ -157,9 +161,9 @@ Following are the plan scripts. Depending on the use case, modify the appropriat
            Type: Deploy
     Description: Enables or disables security services.
 
-           Name: HPE - Linux - SAP HANA DB - partition SAN disk using LVM
+           Name: HPE - Linux - SAP HANA DB - partition disk using LVM
            Type: Deploy
-    Description: Partitions the attached SAN storage using LVM.
+    Description: Partitions the attached storage using LVM.
 
            Name: HPE - RHEL7.x - SAP HANA DB - update OS settings
                  HPE - SLES12 - SAP HANA DB - update OS settings
@@ -205,8 +209,13 @@ Following are the plan scripts. Depending on the use case, modify the appropriat
 
 ## Operating Systems
 
-These plan scripts have been tested with the following Operating Systems:
+These plan scripts are compatible with all Red Hat Enterprise Linux for SAP Applications 7.x and 
+SUSE Linux Enterprise Server for SAP Applications 12 releases.
 
+We have tested the following Operating Systems:
+
+- Red Hat Enterprise Linux for SAP Applications 7.6
 - Red Hat Enterprise Linux for SAP Applications 7.4
-- SUSE Linux Enterprise Server for SAP Applications 12 SP2
+- SUSE Linux Enterprise Server for SAP Applications 12 SP4
 - SUSE Linux Enterprise Server for SAP Applications 12 SP3
+- SUSE Linux Enterprise Server for SAP Applications 12 SP2
